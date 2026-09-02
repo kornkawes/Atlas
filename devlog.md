@@ -45,6 +45,20 @@
    - **Facebook Apify Integration**: เชื่อมต่อโครงสร้างดึงข้อมูลกลุ่ม Facebook ผ่าน Apify API (`apify/facebook-groups-scraper`) เพื่อให้ระบบทำงานออนไลน์ 100% โดยไม่เสี่ยงบัญชีโดนแบน
    - **Card UI Polish**: ปรับการ์ด ZmyHome ให้มีปุ่ม `[ ดูเบอร์โทร ↗ ]` สีน้ำเงินเด่นชัด กดแล้วเปิดหน้าทรัพย์บน ZmyHome ในแท็บใหม่ทันที
 
+9. **Professional UI & Terminology Upgrade (ยกระดับภาพลักษณ์สู่ Enterprise/Agency Grade)**:
+   - **ปลดคำไม่เป็นมืออาชีพออก**: นำคำว่า `(ZmyHome + FB)` ออกจากหน้าจอ เปลี่ยนคำบรรยายและหัวข้อเป็นทางการ:
+     - `Atlas Farming Radar` → `Atlas Sourcing Radar` (ระบบตรวจจับและจัดหาทรัพย์เจ้าของขายเอง — Direct Owner Sourcing)
+     - `ฟาร์มได้ทั้งหมด` → `ตรวจพบล่าสุด` (Total Sourced)
+     - `🔥 ลดราคา` → `🔥 ปรับลดราคา` (Price Drops)
+     - `✨ เจ้าของ 100%` → `✨ เจ้าของขายเอง` (Direct Owner)
+     - ตัวกรองแท็บ `ZmyHome` และ `กลุ่ม Facebook` → เปลี่ยนเป็น `ประกาศตรวจรับรอง (Verified Portal)` และ `เครือข่ายชุมชน (Direct Network)`
+     - การ์ดทรัพย์: เปลี่ยนป้ายแหล่งที่มาเป็น `Verified Portal (FSBO)` และ `Direct Network`, ป้ายรับรองเป็น `Direct Owner`, ปุ่มดูเบอร์เป็น `[ เปิดดูเบอร์โทร ]`, ลิงก์ต้นทางเป็น `เปิดลิงก์ประกาศ`
+   - **ยกระดับหัวข้อย่อยทุกแท็บ**:
+     - Buyer Requirements: "ฐานข้อมูลความต้องการลูกค้า พร้อมระบบจับคู่ทรัพย์อัตโนมัติ (Smart Matching)"
+     - Activity: "บันทึกกิจกรรมและประวัติการติดตามงานขาย (Sales Interaction Feed)"
+     - Reminders: "ท่อติดตามสถานะการเจรจาและการนัดหมาย (Pipeline & Milestones)"
+     - Dashboard: "ภาพรวมพอร์ตอสังหาฯ และตัวชี้วัดประสิทธิภาพ (Portfolio Analytics)"
+
 **ผลการทดสอบ:**
 - ZmyHome Live Scraper: ดึงข้อมูลจริงจากหน้า `list-new-house?typeAds=sale` สำเร็จได้ 26 ทรัพย์สดใหม่
 - NLP Classifier: ผ่านการทดสอบเคสจริง ("ไม่รับนายหน้า" 0.98, "ยินดีรับนายหน้า คอม 3%" 0.96, "เอเจ้นท์ Line@ และสินเชื่อ" 0.05 ปัดตกถูกต้อง)

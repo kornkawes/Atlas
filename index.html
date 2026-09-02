@@ -337,8 +337,8 @@
                         <i class="fa-solid fa-satellite-dish text-lg animate-pulse"></i>
                     </div>
                     <div>
-                        <h2 class="text-base font-black text-slate-900 dark:text-white">Atlas Farming Radar</h2>
-                        <p class="text-[11px] text-slate-400">ค้นหาบ้านมือสองเฉพาะเจ้าของขายเอง (ZmyHome + FB)</p>
+                        <h2 class="text-base font-black text-slate-900 dark:text-white">Atlas Sourcing Radar</h2>
+                        <p class="text-[11px] text-slate-400">ระบบตรวจจับและจัดหาทรัพย์เจ้าของขายเอง (Direct Owner Sourcing)</p>
                     </div>
                 </div>
                 <button onclick="refreshFarmingData(true)" class="flex items-center text-[11px] font-bold text-slate-700 dark:text-slate-200 bg-white/80 dark:bg-slate-800/80 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:bg-white active:scale-95 transition-all">
@@ -349,9 +349,9 @@
             <div class="flex items-center justify-between text-[10px] font-semibold text-slate-500 dark:text-slate-400 bg-slate-100/70 dark:bg-slate-800/50 p-2.5 rounded-2xl flex-wrap gap-2">
                 <div class="flex items-center gap-1.5">
                     <span class="inline-flex items-center text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded-full font-bold">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-ping"></span> อัตโนมัติวันละ 2 รอบ
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-ping"></span> Automated Radar
                     </span>
-                    <span>06:00 เช้า</span> • <span>18:00 เย็น</span>
+                    <span>รอบสแกน 06:00</span> • <span>18:00 (BKK)</span>
                 </div>
                 <span id="farmLastSyncTime" class="text-slate-400">อัปเดต: วันนี้</span>
             </div>
@@ -360,15 +360,15 @@
         <!-- Farming Metrics Row -->
         <div class="grid grid-cols-3 gap-2 mb-4">
             <div class="glass-panel rounded-2xl p-3 border border-white dark:border-slate-800 text-center">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">ฟาร์มได้ทั้งหมด</div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">ตรวจพบล่าสุด</div>
                 <div id="farmTotalCount" class="text-lg font-black text-slate-900 dark:text-white mt-0.5">0</div>
             </div>
             <div class="glass-panel rounded-2xl p-3 border border-white dark:border-slate-800 text-center">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-rose-500">🔥 ลดราคา</div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-rose-500">🔥 ปรับลดราคา</div>
                 <div id="farmPriceDropCount" class="text-lg font-black text-rose-500 mt-0.5">0</div>
             </div>
             <div class="glass-panel rounded-2xl p-3 border border-white dark:border-slate-800 text-center">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-emerald-500">✨ เจ้าของ 100%</div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-emerald-500">✨ เจ้าของขายเอง</div>
                 <div id="farmOwnerVerifiedCount" class="text-lg font-black text-emerald-500 mt-0.5">0</div>
             </div>
         </div>
@@ -381,9 +381,9 @@
             </div>
             <div class="flex gap-1.5 overflow-x-auto no-scrollbar py-1">
                 <button data-farm-filter="all" onclick="setFarmingFilter('all')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 dark:bg-indigo-600 text-white shadow-sm shrink-0">ทั้งหมด</button>
-                <button data-farm-filter="pricedrop" onclick="setFarmingFilter('pricedrop')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">🔥 ลดราคา</button>
-                <button data-farm-filter="zmyhome" onclick="setFarmingFilter('zmyhome')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">ZmyHome</button>
-                <button data-farm-filter="facebook" onclick="setFarmingFilter('facebook')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">กลุ่ม Facebook</button>
+                <button data-farm-filter="pricedrop" onclick="setFarmingFilter('pricedrop')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">🔥 ปรับลดราคา</button>
+                <button data-farm-filter="zmyhome" onclick="setFarmingFilter('zmyhome')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">ประกาศตรวจรับรอง</button>
+                <button data-farm-filter="facebook" onclick="setFarmingFilter('facebook')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">เครือข่ายชุมชน</button>
             </div>
         </div>
 
@@ -394,7 +394,7 @@
                     <span class="w-6 h-6 rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xs">
                         <i class="fa-solid fa-sliders"></i>
                     </span>
-                    <h3 class="text-xs font-bold text-slate-800 dark:text-white">เลือกโซนและเรทราคาที่ต้องการฟาร์ม</h3>
+                    <h3 class="text-xs font-bold text-slate-800 dark:text-white">เงื่อนไขโซนและช่วงราคาเป้าหมาย (Target Criteria)</h3>
                 </div>
                 <button type="button" onclick="resetFarmingCriteria()" class="text-[11px] text-slate-400 hover:text-rose-500 font-semibold transition-colors flex items-center gap-1">
                     <i class="fa-solid fa-arrow-rotate-left text-[10px]"></i>ล้างตัวกรอง
@@ -405,10 +405,10 @@
             <div>
                 <div class="flex items-center justify-between mb-1.5">
                     <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1">
-                        <i class="fa-solid fa-location-dot text-indigo-500"></i>โซนเป้าหมายที่ต้องการฟาร์ม (พิมพ์เพิ่ม/ลบได้อิสระ)
+                        <i class="fa-solid fa-location-dot text-indigo-500"></i>โซนและทำเลเป้าหมาย (Target Territory)
                     </label>
                     <span id="farmSyncStatusBadge" class="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
-                        <i class="fa-solid fa-cloud-check"></i> พร้อมสแกนรอบ 06:00/18:00
+                        <i class="fa-solid fa-cloud-check"></i> Sync รอบสแกน 06:00 & 18:00
                     </span>
                 </div>
 
@@ -418,22 +418,22 @@
                 <!-- Input to add new zone -->
                 <div class="flex gap-2">
                     <div class="relative flex-1">
-                        <input type="text" id="farmNewZoneInput" onkeydown="if(event.key==='Enter'){event.preventDefault(); addFarmingZone();}" placeholder="พิมพ์ชื่อโซนที่ต้องการ เช่น ไทรน้อย หรือ บางบัวทอง..." class="w-full bg-slate-50 dark:bg-slate-800/80 rounded-xl px-3 py-2 text-xs border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white outline-none focus:border-indigo-500 font-medium">
+                        <input type="text" id="farmNewZoneInput" onkeydown="if(event.key==='Enter'){event.preventDefault(); addFarmingZone();}" placeholder="ระบุชื่อทำเล เช่น ไทรน้อย, บางบัวทอง..." class="w-full bg-slate-50 dark:bg-slate-800/80 rounded-xl px-3 py-2 text-xs border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white outline-none focus:border-indigo-500 font-medium">
                     </div>
                     <button type="button" onclick="addFarmingZone()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-sm active:scale-95 transition-all flex items-center gap-1 shrink-0">
-                        <i class="fa-solid fa-plus text-[10px]"></i> เพิ่มโซน
+                        <i class="fa-solid fa-plus text-[10px]"></i> เพิ่มทำเล
                     </button>
                 </div>
                 <div class="flex items-center justify-between text-[10px] text-slate-400 mt-1 px-1">
-                    <span>กด Enter หรือคลิก "+ เพิ่มโซน" (แตะ × ที่แท็กเพื่อลบออก)</span>
-                    <button type="button" onclick="resetDefaultFarmingZones()" class="text-indigo-500 hover:underline font-semibold">ใส่โซนแนะนำ</button>
+                    <span>กด Enter หรือคลิก "+ เพิ่มทำเล" (แตะ × ที่แท็กเพื่อลบออก)</span>
+                    <button type="button" onclick="resetDefaultFarmingZones()" class="text-indigo-500 hover:underline font-semibold">โซนแนะนำเริ่มต้น</button>
                 </div>
             </div>
 
             <!-- Price Range Selector -->
             <div class="pt-2 border-t border-slate-100 dark:border-slate-800">
                 <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center justify-between">
-                    <span><i class="fa-solid fa-tag mr-1 text-emerald-500"></i>ช่วงราคาที่ต้องการ (Price Range)</span>
+                    <span><i class="fa-solid fa-tag mr-1 text-emerald-500"></i>ช่วงราคาและงบประมาณ (Price Budget Range)</span>
                     <span id="activePriceSummary" class="text-emerald-600 dark:text-emerald-400 font-bold">ไม่จำกัด</span>
                 </label>
                 <!-- Quick Price Presets -->
@@ -480,9 +480,9 @@
         <div class="flex items-center justify-between mb-4">
             <div>
                 <h2 class="text-lg font-bold text-slate-900 dark:text-white">Buyer Requirements</h2>
-                <p class="text-[11px] text-slate-400 dark:text-slate-500">เก็บความต้องการลูกค้า แล้วจับคู่กับทรัพย์อัตโนมัติ</p>
+                <p class="text-[11px] text-slate-400 dark:text-slate-500">ฐานข้อมูลความต้องการลูกค้า พร้อมระบบจับคู่ทรัพย์อัตโนมัติ (Smart Matching)</p>
             </div>
-            <button onclick="openBuyerModal()" class="bg-slate-900 dark:bg-indigo-600 text-white text-sm font-semibold px-4 py-2.5 rounded-2xl shadow-lg active:scale-[0.98] transition-all"><i class="fa-solid fa-plus mr-1.5"></i>เพิ่ม</button>
+            <button onclick="openBuyerModal()" class="bg-slate-900 dark:bg-indigo-600 text-white text-sm font-semibold px-4 py-2.5 rounded-2xl shadow-lg active:scale-[0.98] transition-all"><i class="fa-solid fa-plus mr-1.5"></i>เพิ่มลูกค้า</button>
         </div>
         <div id="buyersContainer" class="space-y-3"></div>
       </div>
@@ -491,10 +491,10 @@
       <div id="viewActivity" data-view="activity" class="hidden">
         <div class="flex items-center justify-between mb-4">
             <div>
-                <h2 class="text-lg font-bold text-slate-900 dark:text-white">Activity</h2>
-                <p class="text-[11px] text-slate-400 dark:text-slate-500">บันทึกกิจกรรมการขาย ติดตามได้แบบ timeline</p>
+                <h2 class="text-lg font-bold text-slate-900 dark:text-white">Activity Timeline</h2>
+                <p class="text-[11px] text-slate-400 dark:text-slate-500">บันทึกกิจกรรมและประวัติการติดตามงานขาย (Sales Interaction Feed)</p>
             </div>
-            <button onclick="openActivityModal()" class="bg-slate-900 dark:bg-indigo-600 text-white text-sm font-semibold px-4 py-2.5 rounded-2xl shadow-lg active:scale-[0.98] transition-all"><i class="fa-solid fa-plus mr-1.5"></i>บันทึก</button>
+            <button onclick="openActivityModal()" class="bg-slate-900 dark:bg-indigo-600 text-white text-sm font-semibold px-4 py-2.5 rounded-2xl shadow-lg active:scale-[0.98] transition-all"><i class="fa-solid fa-plus mr-1.5"></i>บันทึกกิจกรรม</button>
         </div>
         <div id="activityFeedContainer" class="space-y-3"></div>
       </div>
@@ -502,8 +502,8 @@
       <!-- ===== VIEW: REMINDERS (#13 Owner Follow-up Reminder) ===== -->
       <div id="viewReminders" data-view="reminders" class="hidden">
         <div class="mb-4">
-            <h2 class="text-lg font-bold text-slate-900 dark:text-white">Follow-up Pipeline</h2>
-            <p class="text-[11px] text-slate-400 dark:text-slate-500">เตือนติดตาม Owner / Buyer ตามกฎเวลา</p>
+            <h2 class="text-lg font-bold text-slate-900 dark:text-white">Deal Pipeline & Follow-up</h2>
+            <p class="text-[11px] text-slate-400 dark:text-slate-500">ท่อติดตามสถานะการเจรจาและการนัดหมาย (Pipeline & Milestones)</p>
         </div>
         <div id="remindersContainer" class="space-y-5"></div>
       </div>
@@ -511,8 +511,8 @@
       <!-- ===== VIEW: DASHBOARD (#11 Market Dashboard) ===== -->
       <div id="viewDashboard" data-view="dashboard" class="hidden">
         <div class="mb-4">
-            <h2 class="text-lg font-bold text-slate-900 dark:text-white">Market Dashboard</h2>
-            <p class="text-[11px] text-slate-400 dark:text-slate-500">ภาพรวมพอร์ต ทรัพย์ ดีมานด์ และกิจกรรม</p>
+            <h2 class="text-lg font-bold text-slate-900 dark:text-white">Executive Dashboard</h2>
+            <p class="text-[11px] text-slate-400 dark:text-slate-500">ภาพรวมพอร์ตอสังหาฯ และตัวชี้วัดประสิทธิภาพ (Portfolio Analytics)</p>
         </div>
         <div id="dashboardContainer" class="space-y-4"></div>
       </div>
@@ -3160,8 +3160,9 @@
             const sourceBadgeClass = isZmy 
                 ? 'bg-blue-50 text-blue-700 dark:bg-blue-950/50 dark:text-blue-300 border-blue-200 dark:border-blue-800' 
                 : 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800';
-            const sourceIcon = isZmy ? 'fa-solid fa-house-signal' : 'fa-brands fa-facebook';
-            const sourceLabel = item.sourceGroup || (isZmy ? 'ZmyHome (เจ้าของขายเอง)' : 'กลุ่ม Facebook');
+            const sourceIcon = isZmy ? 'fa-solid fa-house-signal' : 'fa-solid fa-users';
+            let sourceLabel = item.sourceGroup || (isZmy ? 'Verified Portal' : 'Direct Network');
+            sourceLabel = sourceLabel.replace('ZmyHome (เจ้าของขายเอง)', 'Verified Portal (FSBO)').replace('กลุ่ม Facebook', 'Direct Network');
 
             // Price Drop badge
             let priceDropBadge = '';
@@ -3170,7 +3171,7 @@
                 const pct = ((diff / item.previousPrice) * 100).toFixed(1);
                 priceDropBadge = `
                     <div class="inline-flex items-center gap-1 bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 text-[10px] font-bold px-2 py-0.5 rounded-md border border-rose-200 dark:border-rose-900 mt-1">
-                        <i class="fa-solid fa-arrow-trend-down"></i> ลดราคา ฿${diff.toLocaleString()} (-${pct}%)
+                        <i class="fa-solid fa-arrow-trend-down"></i> ปรับลด ฿${diff.toLocaleString()} (-${pct}%)
                     </div>
                 `;
             }
@@ -3191,11 +3192,11 @@
                                 <i class="${sourceIcon}"></i> ${sourceLabel}
                             </span>
                             <span class="inline-flex items-center text-[9px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded-full border border-emerald-200 dark:border-emerald-800 shrink-0">
-                                <i class="fa-solid fa-shield-halved mr-1"></i>เจ้าของ 100%
+                                <i class="fa-solid fa-shield-halved mr-1"></i>Direct Owner
                             </span>
                         </div>
                         <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-indigo-600 text-[11px] font-semibold shrink-0 flex items-center gap-1">
-                            ดูโพสต์ต้นทาง <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                            เปิดลิงก์ประกาศ <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
                         </a>
                     </div>
 
@@ -3225,19 +3226,19 @@
                         <div class="bg-indigo-50/70 dark:bg-indigo-950/40 rounded-2xl p-2.5 mb-3 flex items-center justify-between border border-indigo-100 dark:border-indigo-900/50">
                             <div class="min-w-0 pr-2">
                                 <div class="text-[9px] font-bold uppercase tracking-wider text-indigo-500 flex items-center gap-1">
-                                    <i class="fa-solid fa-house-chimney"></i> ZmyHome เจ้าของขายเอง
+                                    <i class="fa-solid fa-house-chimney"></i> Verified Portal • เจ้าของขายเอง
                                 </div>
-                                <div class="text-xs font-bold text-slate-800 dark:text-white truncate">คลิกเปิดดูเบอร์โทรศัพท์บนเว็บ</div>
+                                <div class="text-xs font-bold text-slate-800 dark:text-white truncate">ดูข้อมูลติดต่อเจ้าของบนพอร์ทัล</div>
                             </div>
                             <a href="${item.sourceUrl}" target="_blank" class="px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm shrink-0 flex items-center gap-1.5 transition-all active:scale-95">
-                                <span>ดูเบอร์โทร</span>
+                                <span>เปิดดูเบอร์โทร</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                             </a>
                         </div>
                     ` : `
                         <div class="bg-slate-50 dark:bg-slate-800/60 rounded-2xl p-2.5 mb-3 flex items-center justify-between border border-slate-100 dark:border-slate-800">
                             <div class="min-w-0">
-                                <div class="text-[9px] font-bold uppercase tracking-wider text-slate-400">เจ้าของขายเอง</div>
+                                <div class="text-[9px] font-bold uppercase tracking-wider text-slate-400">เจ้าของขายเอง (Direct Owner)</div>
                                 <div class="text-xs font-bold text-slate-800 dark:text-white truncate">${item.ownerName || 'เจ้าของ'}</div>
                             </div>
                             <div class="flex items-center gap-1.5 shrink-0">
@@ -3252,7 +3253,7 @@
                                     </a>
                                 ` : ''}
                                 ${item.sourceUrl ? `
-                                    <a href="${item.sourceUrl}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-200 flex items-center justify-center text-xs shadow-sm active:scale-95 transition-all" title="เปิดโพสต์/ประกาศต้นทาง">
+                                    <a href="${item.sourceUrl}" target="_blank" class="w-8 h-8 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-200 flex items-center justify-center text-xs shadow-sm active:scale-95 transition-all" title="เปิดประกาศต้นทาง">
                                         <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
                                     </a>
                                 ` : ''}
