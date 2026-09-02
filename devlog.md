@@ -51,13 +51,14 @@
      - `ฟาร์มได้ทั้งหมด` → `ตรวจพบล่าสุด` (Total Sourced)
      - `🔥 ลดราคา` → `🔥 ปรับลดราคา` (Price Drops)
      - `✨ เจ้าของ 100%` → `✨ เจ้าของขายเอง` (Direct Owner)
-     - ตัวกรองแท็บ `ZmyHome` และ `กลุ่ม Facebook` → เปลี่ยนเป็น `ประกาศตรวจรับรอง (Verified Portal)` และ `เครือข่ายชุมชน (Direct Network)`
-     - การ์ดทรัพย์: เปลี่ยนป้ายแหล่งที่มาเป็น `Verified Portal (FSBO)` และ `Direct Network`, ป้ายรับรองเป็น `Direct Owner`, ปุ่มดูเบอร์เป็น `[ เปิดดูเบอร์โทร ]`, ลิงก์ต้นทางเป็น `เปิดลิงก์ประกาศ`
+     - ตัวกรองแท็บและป้ายที่มา: ใช้คำที่ตรงไปตรงมาและเข้าใจง่าย `ZmyHome` และ `Facebook`
+     - การ์ดทรัพย์: แสดงป้าย `ZmyHome` / `Facebook`, ป้ายรับรองเป็น `Direct Owner`, ปุ่มดูเบอร์เป็น `[ เปิดดูเบอร์โทร ↗ ]`, ลิงก์ต้นทางเป็น `เปิดลิงก์ประกาศ ↗`
    - **ยกระดับหัวข้อย่อยทุกแท็บ**:
      - Buyer Requirements: "ฐานข้อมูลความต้องการลูกค้า พร้อมระบบจับคู่ทรัพย์อัตโนมัติ (Smart Matching)"
      - Activity: "บันทึกกิจกรรมและประวัติการติดตามงานขาย (Sales Interaction Feed)"
      - Reminders: "ท่อติดตามสถานะการเจรจาและการนัดหมาย (Pipeline & Milestones)"
      - Dashboard: "ภาพรวมพอร์ตอสังหาฯ และตัวชี้วัดประสิทธิภาพ (Portfolio Analytics)"
+   - **GitHub Repo Migration**: ย้าย Remote Repository เป็น `https://github.com/kornkawes/Atlas.git` ตามที่ Nut เปลี่ยนชื่อเรียบร้อยแล้ว
 
 **ผลการทดสอบ:**
 - ZmyHome Live Scraper: ดึงข้อมูลจริงจากหน้า `list-new-house?typeAds=sale` สำเร็จได้ 26 ทรัพย์สดใหม่

@@ -382,8 +382,8 @@
             <div class="flex gap-1.5 overflow-x-auto no-scrollbar py-1">
                 <button data-farm-filter="all" onclick="setFarmingFilter('all')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 dark:bg-indigo-600 text-white shadow-sm shrink-0">ทั้งหมด</button>
                 <button data-farm-filter="pricedrop" onclick="setFarmingFilter('pricedrop')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">🔥 ปรับลดราคา</button>
-                <button data-farm-filter="zmyhome" onclick="setFarmingFilter('zmyhome')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">ประกาศตรวจรับรอง</button>
-                <button data-farm-filter="facebook" onclick="setFarmingFilter('facebook')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">เครือข่ายชุมชน</button>
+                <button data-farm-filter="zmyhome" onclick="setFarmingFilter('zmyhome')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">ZmyHome</button>
+                <button data-farm-filter="facebook" onclick="setFarmingFilter('facebook')" class="farm-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-white/60 dark:bg-slate-800/60 text-slate-500 dark:text-slate-300 shrink-0">Facebook</button>
             </div>
         </div>
 
@@ -3160,9 +3160,9 @@
             const sourceBadgeClass = isZmy 
                 ? 'bg-blue-50 text-blue-700 dark:bg-blue-950/50 dark:text-blue-300 border-blue-200 dark:border-blue-800' 
                 : 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800';
-            const sourceIcon = isZmy ? 'fa-solid fa-house-signal' : 'fa-solid fa-users';
-            let sourceLabel = item.sourceGroup || (isZmy ? 'Verified Portal' : 'Direct Network');
-            sourceLabel = sourceLabel.replace('ZmyHome (เจ้าของขายเอง)', 'Verified Portal (FSBO)').replace('กลุ่ม Facebook', 'Direct Network');
+            const sourceIcon = isZmy ? 'fa-solid fa-house-signal' : 'fa-brands fa-facebook';
+            let sourceLabel = item.sourceGroup || (isZmy ? 'ZmyHome' : 'Facebook');
+            sourceLabel = sourceLabel.replace(' (เจ้าของขายเอง)', '');
 
             // Price Drop badge
             let priceDropBadge = '';
@@ -3226,9 +3226,9 @@
                         <div class="bg-indigo-50/70 dark:bg-indigo-950/40 rounded-2xl p-2.5 mb-3 flex items-center justify-between border border-indigo-100 dark:border-indigo-900/50">
                             <div class="min-w-0 pr-2">
                                 <div class="text-[9px] font-bold uppercase tracking-wider text-indigo-500 flex items-center gap-1">
-                                    <i class="fa-solid fa-house-chimney"></i> Verified Portal • เจ้าของขายเอง
+                                    <i class="fa-solid fa-house-chimney"></i> ZmyHome • เจ้าของขายเอง
                                 </div>
-                                <div class="text-xs font-bold text-slate-800 dark:text-white truncate">ดูข้อมูลติดต่อเจ้าของบนพอร์ทัล</div>
+                                <div class="text-xs font-bold text-slate-800 dark:text-white truncate">คลิกเปิดดูเบอร์โทรศัพท์บนเว็บ</div>
                             </div>
                             <a href="${item.sourceUrl}" target="_blank" class="px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm shrink-0 flex items-center gap-1.5 transition-all active:scale-95">
                                 <span>เปิดดูเบอร์โทร</span>
