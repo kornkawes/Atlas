@@ -1,4 +1,4 @@
-const CACHE_NAME = "hre-shortcut-v2";
+const CACHE_NAME = "atlas-pwa-v1";
 
 self.addEventListener("install", event => {
   self.skipWaiting();

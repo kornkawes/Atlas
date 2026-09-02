@@ -1,7 +1,7 @@
 {
-  "name": "Home Real Estate",
-  "short_name": "Home OS",
-  "description": "Property listing app",
+  "name": "Atlas Real Estate",
+  "short_name": "Atlas",
+  "description": "Atlas Real Estate Operating System & Property Farming",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

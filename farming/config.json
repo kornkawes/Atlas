@@ -1,0 +1,62 @@
+{
+  "name": "Atlas Farming System",
+  "version": "1.0.0",
+  "target_zones": [
+    "ราชพฤกษ์",
+    "บางใหญ่",
+    "ปิ่นเกล้า",
+    "บางกรวย",
+    "บางบัวทอง",
+    "ไทรน้อย",
+    "นนทบุรี",
+    "รัตนาธิเบศร์",
+    "งามวงศ์วาน",
+    "แจ้งวัฒนะ",
+    "พระราม 5",
+    "ชัยพฤกษ์",
+    "กาญจนาภิเษก"
+  ],
+  "property_types": [
+    "บ้านเดี่ยว",
+    "บ้านแฝด",
+    "ทาวน์โฮม",
+    "ทาวน์เฮ้าส์",
+    "คอนโด",
+    "อาคารพาณิชย์"
+  ],
+  "price_range": {
+    "min": 3000000,
+    "max": 10000000
+  },
+  "facebook_groups": [
+    {
+      "name": "กลุ่มบ้านมือสอง เจ้าของขายเอง นนทบุรี-ราชพฤกษ์",
+      "url": "https://www.facebook.com/groups/secondhandhomenonthaburi",
+      "active": true
+    },
+    {
+      "name": "ซื้อขายบ้านเดี่ยว ทาวน์โฮม เจ้าของขายเอง ไม่รับนายหน้า",
+      "url": "https://www.facebook.com/groups/ownerhomesale",
+      "active": true
+    },
+    {
+      "name": "บ้านมือสอง ปิ่นเกล้า บางกรวย ราชพฤกษ์",
+      "url": "https://www.facebook.com/groups/pinklaohomes",
+      "active": true
+    }
+  ],
+  "schedule": {
+    "times": ["06:00", "18:00"],
+    "timezone": "Asia/Bangkok"
+  },
+  "storage": {
+    "local_data_file": "farming/data/farmed_listings.json",
+    "client_export_file": "farmed_listings.json",
+    "google_sheet_sync": true
+  },
+  "filtering": {
+    "strict_owner_mode": true,
+    "min_confidence_score": 0.70
+  }
+}
+
