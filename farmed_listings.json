@@ -1,7 +1,7 @@
 {
   "status": "success",
   "total": 57,
-  "lastRunAt": "2026-09-03T14:47:07.083474",
+  "lastRunAt": "2026-09-04T00:53:30.420848",
   "data": [
     {
       "id": "fb_101928305_sainoi",
@@ -28,7 +28,7 @@
       "postedAt": "2026-09-03T05:00:57.880903",
       "firstSeenAt": "2026-09-03T05:00:15.435661",
       "lastUpdatedAt": "2026-09-03T05:00:15.435661",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -65,7 +65,7 @@
       "postedAt": "2026-09-03T05:00:57.880903",
       "firstSeenAt": "2026-09-03T05:00:15.435661",
       "lastUpdatedAt": "2026-09-03T05:00:15.435661",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -761,7 +761,7 @@
       "explicitOwnerTag": true,
       "firstSeenAt": "2026-09-03T04:29:16.772207",
       "lastUpdatedAt": "2026-09-03T04:32:26.201181",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -1113,7 +1113,7 @@
       "explicitOwnerTag": true,
       "firstSeenAt": "2026-09-03T04:29:16.772207",
       "lastUpdatedAt": "2026-09-03T04:32:26.201181",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -1245,7 +1245,7 @@
       "explicitOwnerTag": true,
       "firstSeenAt": "2026-09-03T04:29:16.772207",
       "lastUpdatedAt": "2026-09-03T04:32:26.201181",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -1333,7 +1333,7 @@
       "explicitOwnerTag": true,
       "firstSeenAt": "2026-09-03T04:29:16.772207",
       "lastUpdatedAt": "2026-09-03T04:32:26.201181",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -1377,7 +1377,7 @@
       "explicitOwnerTag": true,
       "firstSeenAt": "2026-09-03T04:29:16.772207",
       "lastUpdatedAt": "2026-09-03T04:32:26.201181",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -2037,7 +2037,7 @@
       "explicitOwnerTag": true,
       "firstSeenAt": "2026-09-03T04:29:16.772207",
       "lastUpdatedAt": "2026-09-03T04:32:26.201181",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -2390,7 +2390,7 @@
       "postedAt": "2026-09-03T04:27:50.484512",
       "firstSeenAt": "2026-09-03T04:27:49.706408",
       "lastUpdatedAt": "2026-09-03T04:27:49.706408",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
@@ -2464,7 +2464,7 @@
       "postedAt": "2026-09-03T04:27:50.484512",
       "firstSeenAt": "2026-09-03T04:27:49.706408",
       "lastUpdatedAt": "2026-09-03T04:27:49.706408",
-      "lastCheckedAt": "2026-09-03T14:45:12.198291",
+      "lastCheckedAt": "2026-09-04T00:52:13.103813",
       "isNew": false,
       "isPriceDrop": false,
       "priceHistory": [
